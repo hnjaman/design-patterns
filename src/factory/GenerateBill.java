@@ -20,7 +20,6 @@ abstract class Plan {
     public void calculateBill(int units) {
         System.out.println(units * rate);
     }
-
 }
 //end of Plan class.
 
