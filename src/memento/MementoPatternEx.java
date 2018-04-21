@@ -1,4 +1,4 @@
-package memento;
+package src.memento;
 
 
 class Memento {
@@ -15,6 +15,7 @@ class Memento {
 
 
 class Originator {
+
     private String state;
     Memento m;
 
@@ -29,6 +30,14 @@ class Originator {
         return m;
     }
 
+    public void SaveMemento(Memento m) {
+        m = m;
+    }
+
+    public Memento RetrieveMemento() {
+        return m;
+    }
+
     // Back to old state
     public void Revert(Memento memento) {
         System.out.println("Restoring to previous state...");
@@ -37,20 +46,20 @@ class Originator {
     }
 }
 
-
-class Caretaker {
-    private Memento _memento;
-
-    public void SaveMemento(Memento m) {
-        _memento = m;
-    }
-
-    public Memento RetrieveMemento() {
-        return _memento;
-    }
-}
+//class Caretaker {
+//    private Memento _memento;
+//
+//    public void SaveMemento(Memento m) {
+//        _memento = m;
+//    }
+//
+//    public Memento RetrieveMemento() {
+//        return _memento;
+//    }
+//}
 
 public class MementoPatternEx {
+
     public static void main(String[] args) {
         System.out.println("***Memento Pattern Demo***\n");
 
@@ -58,13 +67,14 @@ public class MementoPatternEx {
         o.setState("First state");
 
         // Holding old state
-        Caretaker c = new Caretaker();
-        c.SaveMemento(o.OriginatorMemento());
+       // Caretaker c = new Caretaker();
+        o.setState("Second state");
+        o.SaveMemento(o.OriginatorMemento());
 
         //Changing state
-        o.setState("Second state");
+        o.setState("3rd state");
 
         // Restore saved state
-        o.Revert(c.RetrieveMemento());
+        o.Revert(o.RetrieveMemento());
     }
 }
