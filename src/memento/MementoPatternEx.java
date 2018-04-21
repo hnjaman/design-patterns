@@ -1,4 +1,4 @@
-package src.memento;
+package memento;
 
 
 class Memento {
@@ -53,6 +53,7 @@ class Caretaker {
 public class MementoPatternEx {
     public static void main(String[] args) {
         System.out.println("***Memento Pattern Demo***\n");
+
         Originator o = new Originator();
         o.setState("First state");
 
