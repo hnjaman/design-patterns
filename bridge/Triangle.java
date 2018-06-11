@@ -1,7 +1,7 @@
 package bridge;
 
 public class Triangle extends Shape {
-    protected Triangle(IColor c) {
+    protected Triangle(bridge.IColor c) {
         super(c);
     }
 

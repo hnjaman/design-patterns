@@ -2,8 +2,8 @@ package bridge;
 
 public abstract class Shape {
     //Composition
-    protected IColor color;
-    protected Shape(IColor c)
+    protected bridge.IColor color;
+    protected Shape(bridge.IColor c)
     {
         this.color = c;
     }
