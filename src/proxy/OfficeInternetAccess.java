@@ -1,5 +1,5 @@
-package src.proxy;
-
-public interface OfficeInternetAccess {
-    void grantInternetAccess();
-}
+//package src.proxy;
+//
+//public interface OfficeInternetAccess {
+//    void grantInternetAccess();
+//}

@@ -28,7 +28,7 @@ abstract class AbstractDecorator extends Component {
 class ConcreteDecoratorEx_1 extends AbstractDecorator {
     public void doJob() {
         super.doJob();
-//Add additional thing if necessary
+        //Add additional thing if necessary
         System.out.println("I am explicitly from Ex_1");
     }
 }
@@ -61,12 +61,12 @@ class DecoratorPatternEx {
         System.out.println("***Decorator pattern Demo***");
         ConcreteComponent cc = new ConcreteComponent();
         ConcreteDecoratorEx_1 cd_1 = new ConcreteDecoratorEx_1();
-// Decorating ConcreteComponent Object //cc with ConcreteDecoratorEx_1
+        // Decorating ConcreteComponent Object //cc with ConcreteDecoratorEx_1
         cd_1.SetTheComponent(cc);
         cd_1.doJob();
         ConcreteDecoratorEx_2 cd_2 = new ConcreteDecoratorEx_2();
-// Decorating ConcreteComponent Object //cc with ConcreteDecoratorEx_1 &
-//ConcreteDecoratorEX_2
+        // Decorating ConcreteComponent Object //cc with ConcreteDecoratorEx_1 &
+        //ConcreteDecoratorEX_2
 
         cd_2.SetTheComponent(cd_1);//Adding //results from cd_1 now
         cd_2.doJob();

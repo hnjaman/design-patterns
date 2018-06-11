@@ -1,11 +1,12 @@
-package src.Decorator;
+package Decorator;
 
-public abstract class FoodDecorator implements Food {
+import MyDecorator.Food;
+
+public abstract class FoodDecorator extends Food {
     private Food newFood;
     public FoodDecorator(Food newFood)  {
         this.newFood=newFood;
     }
-    @Override
     public String prepareFood(){
         return newFood.prepareFood();
     }
