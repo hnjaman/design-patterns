@@ -1,4 +1,4 @@
-package iterator;
+package src.iterator;
 
 public class IteratorPatternEx {
     public static void main(String[] args)

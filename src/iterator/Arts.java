@@ -1,4 +1,4 @@
-package iterator;
+package src.iterator;
 
 public class Arts implements ISubject {
     private String[] subjects;
