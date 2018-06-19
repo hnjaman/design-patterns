@@ -1,7 +1,7 @@
 package MyDecorator;
 
 public class FoodDecorator extends Food{
-    public Food plainFood;
+    public Food plainFood;  // association
     public FoodDecorator(Food plainFood){
         this.plainFood=plainFood;
     }

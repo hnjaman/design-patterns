@@ -5,7 +5,7 @@ public class PrototypePatternEx {
     {
         System.out.println("***Prototype Pattern Demo***\n");
         BasicCar nano_base = new Nano("Green Nano");
-        nano_base.price=100000;
+        nano_base.price=300000;
 
         BasicCar ford_basic = new Ford("Ford Yellow");
         ford_basic.price=500000;
@@ -15,7 +15,7 @@ public class PrototypePatternEx {
         bc1 =nano_base.clone();
 
         //Price will be more than 100000 for sure
-        bc1.price = nano_base.price;//+BasicCar.setPrice();
+        bc1.price = nano_base.price+BasicCar.setPrice();
         System.out.println("Car is: "+ bc1.modelname+" and it's price is Rs."+bc1.price);
 
         //Clone Ford Object
