@@ -1,4 +1,4 @@
-package abstractFactoryPattern;
+package abstractFact;
 
 // calculate the loan payment for different banks like HDFC, ICICI, SBI etc. a real world example.
 

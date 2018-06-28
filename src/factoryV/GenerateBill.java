@@ -1,4 +1,4 @@
-package factory;
+package factoryV;
 
 // https://www.javatpoint.com/factory-method-design-pattern
 //Calculate Electricity bill a real world Example.
