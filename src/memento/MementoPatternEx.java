@@ -1,4 +1,4 @@
-package src.memento;
+package memento;
 
 
 class Memento {
