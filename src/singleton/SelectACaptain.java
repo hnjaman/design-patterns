@@ -1,9 +1,10 @@
 package singleton;
 
-public class SingletonPatternEx {
+public class SelectACaptain {
     public static void main(String[] args)
     {
-        Captain c1 = Captain.getCaptain();  // create a captain object
+        // create a captain object
+        Captain c1 = Captain.getCaptain();
         System.out.println("Our Captain object is : "+c1);
         System.out.println("Trying to make another captain for our team");
         Captain c2 = Captain.getCaptain();

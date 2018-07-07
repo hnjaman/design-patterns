@@ -1,9 +1,7 @@
 package singleton;
 
 public class Captain {
-
     private static Captain captain;
-
     //We make the constructor private to prevent the use of "new"
     private Captain() {
     }
