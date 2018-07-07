@@ -18,14 +18,14 @@ class Tiger implements IAnimal {
     }
 }
 
-abstract class IAnimalFactory {
-    public abstract IAnimal
-        /*if we cannot instantiate in later stage, we'll throw exception*/
-    GetAnimalType(String type) throws Exception;
-}
-
-class ConcreteFactory extends IAnimalFactory {
-    @Override
+//abstract class IAnimalFactory {
+//    public abstract IAnimal
+//        /*if we cannot instantiate in later stage, we'll throw exception*/
+//    GetAnimalType(String type) throws Exception;
+//}
+//extends IAnimalFactory
+class ConcreteFactory {
+   // @Override
     public IAnimal GetAnimalType(String type) throws Exception {
         switch (type) {
             case "Duck":
@@ -41,14 +41,14 @@ class ConcreteFactory extends IAnimalFactory {
 public class FactoryPatternEx {
     public static void main(String[] args) throws Exception {
         System.out.println("***Factory Pattern Demo***\n");
-        IAnimalFactory animalFactory = new ConcreteFactory();
+        ConcreteFactory animalFactory = new ConcreteFactory();
         IAnimal DuckType = animalFactory.GetAnimalType("Duck");
         DuckType.Speak();
         IAnimal TigerType = animalFactory.GetAnimalType("Tiger");
         TigerType.Speak();
 
         //There is no Lion type. So, an exception will be thrown
-        IAnimal LionType = animalFactory.GetAnimalType("Lion");
-        LionType.Speak();
+        //IAnimal LionType = animalFactory.GetAnimalType("Lion");
+        //LionType.Speak();
     }
 }
